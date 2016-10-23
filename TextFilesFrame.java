@@ -16,6 +16,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+/**
+ * Obiekt klasy <code>TextFilesFrame</code> reprezentuje ramkę pozwalającą na 
+ * wybór pliku oraz wyświetlenie jego ścieżki, liczby wierszy oraz liczby wyrazów.
+ * @author AleksanderSklorz
+ */
 public class TextFilesFrame extends JFrame{
     JLabel pathLabel;
     JTextField linesNumberField, wordsNumberField;
