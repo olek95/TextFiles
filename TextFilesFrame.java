@@ -77,3 +77,4 @@ public class TextFilesFrame extends JFrame{
         add(resultPanel, BorderLayout.CENTER);
     }
 }
+
