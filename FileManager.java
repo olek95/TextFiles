@@ -24,15 +24,13 @@ public class FileManager {
         try(FileReader file = new FileReader(f)){
             int character;
             while((character = file.read()) != -1){
-                if(character == 10 && previousChar == 13)
-                    rowsNumber++;
+                if(character == 10 && previousChar == 13) rowsNumber++;
                 previousChar = character;
             }
         }catch(IOException e){
             Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, e);
         }
-        if(previousChar == -1) return 0;
-        return rowsNumber;
+        return previousChar == -1 ? 0 : rowsNumber;
     }
     /**
      * Liczy wyrazy w pliku tekstowym, oddzielone białymi znakami. 
